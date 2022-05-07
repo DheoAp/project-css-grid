@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>latihan Grid</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">Admin Dheo</h2>
+          <p class="sub-heading">selamat datang</p>
+        </div>
+        <div class="features feature-1">
+          <h4 class="price">IDR 550K</h4>
+          <p class="item">Mouse</p>
+        </div>
+        <div class="features feature-2">
+          <h4 class="price">IDR 1550K</h4>
+          <p class="item">Laptop</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>DheoAp</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Produk</a></li>
+          <li><a href="">Tentang</a></li>
+          <li><a href="">Galeri</a></li>
+        </ul>
+      </nav>
+
+      <section class="services">
+        <div class="service">
+          <div class="icon"><i class="fa-solid fa-award"></i></div>
+          <h3>Setifikat</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quis.</p>
+        </div>
+        <div class="service">
+          <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Coding</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quis.</p>
+        </div>
+        <div class="service">
+          <div class="icon"><i class="fa-solid fa-code"></i></div>
+          <h3>HTML CSS</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quis.</p>
+        </div>
+        <div class="service">
+          <div class="icon"><i class="fa-brands fa-js"></i></div>
+          <h3>Javascript</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quis.</p>
+        </div>
+      </section>
+
+      <section class="galeri">
+        <h2>Galeri</h2>
+        <img src="img/2.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+        <img src="img/4.jpg" alt="">
+        <img src="img/5.jpg" alt="">
+      </section>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
